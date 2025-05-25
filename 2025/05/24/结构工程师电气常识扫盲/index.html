@@ -19,22 +19,33 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"huasaika.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.23.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="huasaika&#39;s blog">
-<meta property="og:url" content="https://huasaika.github.io/index.html">
+    <meta name="description" content="结构工程师电气常识扫盲变压器原理：变压器的原理简单来说就是一侧线圈电流变化-磁场变化-另一侧线圈产生电流和电压。由于电磁效应产生的电压和线圈匝数有关。(干货收藏！变压器基础知识和变压器原理) 磁芯中间这个磁芯一般是磁铁，因为磁铁的磁通量很高，磁通量高了就会让感应线圈的磁通量增大从而降低损耗。由于本人是结构工程师，对于具体这个变压器怎么升压降压其实不关心，更多的是关心为什么是这种结构。从磁芯的选材来">
+<meta property="og:type" content="article">
+<meta property="og:title" content="结构工程师电气常识扫盲">
+<meta property="og:url" content="https://huasaika.github.io/2025/05/24/%E7%BB%93%E6%9E%84%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%94%B5%E6%B0%94%E5%B8%B8%E8%AF%86%E6%89%AB%E7%9B%B2/index.html">
 <meta property="og:site_name" content="huasaika&#39;s blog">
+<meta property="og:description" content="结构工程师电气常识扫盲变压器原理：变压器的原理简单来说就是一侧线圈电流变化-磁场变化-另一侧线圈产生电流和电压。由于电磁效应产生的电压和线圈匝数有关。(干货收藏！变压器基础知识和变压器原理) 磁芯中间这个磁芯一般是磁铁，因为磁铁的磁通量很高，磁通量高了就会让感应线圈的磁通量增大从而降低损耗。由于本人是结构工程师，对于具体这个变压器怎么升压降压其实不关心，更多的是关心为什么是这种结构。从磁芯的选材来">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://huasaika.github.io/images/jiegousaomang/transformer.png">
+<meta property="og:image" content="https://huasaika.github.io/images/jiegousaomang/capacitance.png">
+<meta property="og:image" content="https://huasaika.github.io/images/jiegousaomang/capacitance_charge.png">
+<meta property="og:image" content="https://huasaika.github.io/images/jiegousaomang/DCDC.png">
+<meta property="article:published_time" content="2025-05-23T16:00:00.000Z">
+<meta property="article:modified_time" content="2025-05-25T14:50:42.180Z">
 <meta property="article:author" content="huasaika">
+<meta property="article:tag" content="知识积累">
+<meta property="article:tag" content="结构设计">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://huasaika.github.io/images/jiegousaomang/transformer.png">
 
 
-<link rel="canonical" href="https://huasaika.github.io/">
+<link rel="canonical" href="https://huasaika.github.io/2025/05/24/%E7%BB%93%E6%9E%84%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%94%B5%E6%B0%94%E5%B8%B8%E8%AF%86%E6%89%AB%E7%9B%B2/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://huasaika.github.io/2025/05/24/%E7%BB%93%E6%9E%84%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%94%B5%E6%B0%94%E5%B8%B8%E8%AF%86%E6%89%AB%E7%9B%B2/","path":"2025/05/24/结构工程师电气常识扫盲/","title":"结构工程师电气常识扫盲"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>huasaika's blog</title>
+<title>结构工程师电气常识扫盲 | huasaika's blog</title>
   
 
 
@@ -84,7 +95,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">huasaika's blog</h1>
+      <p class="site-title">huasaika's blog</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -110,7 +121,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -123,6 +134,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BB%93%E6%9E%84%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%94%B5%E6%B0%94%E5%B8%B8%E8%AF%86%E6%89%AB%E7%9B%B2"><span class="nav-number">1.</span> <span class="nav-text">结构工程师电气常识扫盲</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%98%E5%8E%8B%E5%99%A8"><span class="nav-number">1.1.</span> <span class="nav-text">变压器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8E%9F%E7%90%86%EF%BC%9A"><span class="nav-number">1.1.1.</span> <span class="nav-text">原理：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A3%81%E8%8A%AF"><span class="nav-number">1.1.2.</span> <span class="nav-text">磁芯</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%A1%85%E9%92%A2%E7%89%87%EF%BC%9A"><span class="nav-number">1.1.2.1.</span> <span class="nav-text">硅钢片：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%93%81%E6%B0%A7%E4%BD%93%EF%BC%9A"><span class="nav-number">1.1.2.2.</span> <span class="nav-text">铁氧体：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DCDC%E5%8F%98%E5%8E%8B%E5%99%A8%EF%BC%9A"><span class="nav-number">1.1.3.</span> <span class="nav-text">DCDC变压器：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%B5%E5%AE%B9"><span class="nav-number">1.2.</span> <span class="nav-text">电容</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8E%9F%E7%90%86%EF%BC%9A-1"><span class="nav-number">1.2.1.</span> <span class="nav-text">原理：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#OBC%E7%94%B5%E5%AE%B9%EF%BC%9A"><span class="nav-number">1.2.2.</span> <span class="nav-text">OBC电容：</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -172,16 +184,17 @@
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://huasaika.github.io/2025/05/24/%E7%BB%93%E6%9E%84%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%94%B5%E6%B0%94%E5%B8%B8%E8%AF%86%E6%89%AB%E7%9B%B2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -195,13 +208,13 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | huasaika's blog">
+      <meta itemprop="name" content="结构工程师电气常识扫盲 | huasaika's blog">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/05/24/%E7%BB%93%E6%9E%84%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%94%B5%E6%B0%94%E5%B8%B8%E8%AF%86%E6%89%AB%E7%9B%B2/" class="post-title-link" itemprop="url">结构工程师电气常识扫盲</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          结构工程师电气常识扫盲
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -239,8 +252,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="结构工程师电气常识扫盲"><a href="#结构工程师电气常识扫盲" class="headerlink" title="结构工程师电气常识扫盲"></a>结构工程师电气常识扫盲</h1><h2 id="变压器"><a href="#变压器" class="headerlink" title="变压器"></a>变压器</h2><h3 id="原理："><a href="#原理：" class="headerlink" title="原理："></a>原理：</h3><p><img src="/images/jiegousaomang/transformer.png" alt="变压器原理图" title="transformer"><br>变压器的原理简单来说就是一侧线圈电流变化-磁场变化-另一侧线圈产生电流和电压。由于电磁效应产生的电压和线圈匝数有关。(<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/150508249">干货收藏！变压器基础知识和变压器原理</a>)</p>
+    <div class="post-body" itemprop="articleBody"><h1 id="结构工程师电气常识扫盲"><a href="#结构工程师电气常识扫盲" class="headerlink" title="结构工程师电气常识扫盲"></a>结构工程师电气常识扫盲</h1><h2 id="变压器"><a href="#变压器" class="headerlink" title="变压器"></a>变压器</h2><h3 id="原理："><a href="#原理：" class="headerlink" title="原理："></a>原理：</h3><p><img src="/images/jiegousaomang/transformer.png" alt="变压器原理图" title="transformer"><br>变压器的原理简单来说就是一侧线圈电流变化-磁场变化-另一侧线圈产生电流和电压。由于电磁效应产生的电压和线圈匝数有关。(<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/150508249">干货收藏！变压器基础知识和变压器原理</a>)</p>
 <h3 id="磁芯"><a href="#磁芯" class="headerlink" title="磁芯"></a>磁芯</h3><p>中间这个磁芯一般是磁铁，因为磁铁的磁通量很高，磁通量高了就会让感应线圈的磁通量增大从而降低损耗。<br>由于本人是结构工程师，对于具体这个变压器怎么升压降压其实不关心，更多的是关心为什么是这种结构。<br>从磁芯的选材来说目前接触下来最多的有硅钢片和铁氧体两种</p>
 <h4 id="硅钢片："><a href="#硅钢片：" class="headerlink" title="硅钢片："></a>硅钢片：</h4><p>硅钢片特性是导磁能力强，能在线圈通电时，感应出较大的磁感强度，缩小变压器体积，减少变压器的损耗（铁损）<br>硅钢片的磁芯通常是许多片叠加在一起的，目的是为了减少铁芯内的“涡流损耗”。变压器工作时，会产生的感应电流，在垂直于磁通方向的平面内环流着，所以叫涡流。使用彼此绝缘的铁心硅钢片叠加，能够减少涡流的通过截面，增大通路上的电阻，起到抑制涡流产生的作用，此外，还可以有效地抑制变压器发热问题。<br>从原理上来看，硅钢片是越薄越好，但在实际生产制造过程中，还得考虑到机械强度，叠片难度，叠片工期等因素。所以，并不是选用特别薄的薄片进行叠片。（<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/706241816">变压器铁芯为什么采用硅钢片叠加而成？而不是用铁柱</a></p>
 <h4 id="铁氧体："><a href="#铁氧体：" class="headerlink" title="铁氧体："></a>铁氧体：</h4><table>
@@ -330,7 +342,6 @@
     </p>
   </div>
 </div>
-      
     </div>
 
     
@@ -338,11 +349,17 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          <div class="post-tags">
+              <a href="/tags/%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF/" rel="tag"># 知识积累</a>
+              <a href="/tags/%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1/" rel="tag"># 结构设计</a>
+          </div>
+
+        
+
     </footer>
   </article>
 </div>
+
 
 
 
