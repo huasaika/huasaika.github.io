@@ -218,7 +218,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-05-25 23:06:55" itemprop="dateModified" datetime="2025-05-25T23:06:55+08:00">2025-05-25</time>
+      <time title="修改时间：2025-05-25 23:29:20" itemprop="dateModified" datetime="2025-05-25T23:29:20+08:00">2025-05-25</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -253,17 +253,17 @@
 </thead>
 <tbody><tr>
 <td>初始磁导率（μi）</td>
-<td>数百～数万（如Mn-Zn铁氧体μi&#x3D;2000~15000）</td>
+<td>数百~数万（如Mn-Zn铁氧体μi&#x3D;2000~15000）</td>
 <td>高磁导率可提高电感量，适用于高频变压器。</td>
 </tr>
 <tr>
 <td>饱和磁通密度（Bs）</td>
-<td>300<del>500 mT（Mn-Zn）<br>200</del>400 mT（Ni-Zn）</td>
+<td>300~500 mT（Mn-Zn）<br>200~400 mT（Ni-Zn）</td>
 <td>决定磁芯能承受的最大磁场强度，影响功率容量。</td>
 </tr>
 <tr>
 <td>居里温度（Tc）</td>
-<td>120<del>300℃（Mn-Zn）<br>200</del>450℃（Ni-Zn）</td>
+<td>120~300℃（Mn-Zn）<br>200~450℃（Ni-Zn）</td>
 <td>超过此温度，铁氧体失去磁性。</td>
 </tr>
 <tr>
@@ -276,12 +276,8 @@
 <td>低（如PC95在100kHz, 200mT下约300 kW&#x2F;m³）</td>
 <td>高频下仍保持低损耗，适合开关电源。</td>
 </tr>
-<tr>
-<td>简单概括优势就是：低电阻率高涡流损耗，高磁导率高感电量，高居里温度稳定性强，低成本产量高。</td>
-<td></td>
-<td></td>
-</tr>
 </tbody></table>
+<p>简单概括优势就是：低电阻率高涡流损耗，高磁导率高感电量，高居里温度稳定性强，低成本产量高。</p>
 <h3 id="DCDC变压器："><a href="#DCDC变压器：" class="headerlink" title="DCDC变压器："></a>DCDC变压器：</h3><p>DCDC电路里很重要的一点就是能量效率</p>
 <table>
 <thead>
@@ -330,13 +326,15 @@
     </p>
   </div>
 </div>
-**作为OBC电容时候的核心特性要求**
-**高耐压：**通常需承受300V~800V的母线电压（根据车型平台而定）。
-**低ESR/ESL：**减少充放电损耗，提高效率（尤其高频应用）。
-**高容值：**单颗容量可达数百μF至mF级，确保能量储备。
-**高温稳定性：**工作温度范围需覆盖-40℃~105℃（车规级要求）。
-**长寿命：**匹配整车寿命（10年以上），耐高纹波电流。
 
+<ul>
+<li><strong>作为OBC电容时候的核心特性要求</strong></li>
+<li><strong>高耐压：</strong>通常需承受300V~800V的母线电压（根据车型平台而定）。</li>
+<li><strong>低ESR&#x2F;ESL：</strong>减少充放电损耗，提高效率（尤其高频应用）。</li>
+<li><strong>高容值：</strong>单颗容量可达数百μF至mF级，确保能量储备。</li>
+<li><strong>高温稳定性：</strong>工作温度范围需覆盖-40℃~105℃（车规级要求）。</li>
+<li><strong>长寿命：</strong>匹配整车寿命（10年以上），耐高纹波电流。</li>
+</ul>
 <h3 id="DCDC半桥电容："><a href="#DCDC半桥电容：" class="headerlink" title="DCDC半桥电容："></a>DCDC半桥电容：</h3><p>半桥电路：<br><img src="/images/jiegousaomang/banqiaodianlu.png" alt="半桥电路" title="半桥电路"><br>简单来说就是一个直流电的降压电路，首先因为是直流电路，而变压器的工作要求是需要电流的梯度，所以通过人为迅速开关S1、S2两个二极管来人造交流电给变压器用。电容在电路中的作用更多是通过串联两个耐压值略大于输入电压一半的电容给上下变化的电压一个中点值。还有当开关管关闭时，变压器和线路电感会试图维持电流（楞次定律），产生反向电压。电容此时充当“临时储能池”，吸收这部分能量，防止电压尖峰击穿开关管。(<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_42078934/article/details/127073851">电源硬件设计—-半桥变换器(Half-Bridge Converter)基础</a>)</p>
 <h2 id="电感"><a href="#电感" class="headerlink" title="电感"></a>电感</h2><h3 id="原理：-2"><a href="#原理：-2" class="headerlink" title="原理："></a>原理：</h3><p><img src="/images/jiegousaomang/inductance.png" alt="电感" title="电感"><br>电感的原理很简单，就是楞次定律增反减同来拒去留，一般串联在电路里利用本身来据去留的特性消除噪声信号</p>
 <h3 id="PFC电感："><a href="#PFC电感：" class="headerlink" title="PFC电感："></a>PFC电感：</h3><p>PFC(Power Factor Correction)又叫功率因数校正，功率因数是指有功功率与视在功率（总耗电量）的比值。当负载电路有电容时，由于电容充电时充电即放电但电压要慢慢建立，所以电容的<strong>电流波形朝前，电压波形朝后。<strong>但是电感由于对电流有阻抗作用，所以电感的</strong>电流波形朝前，电压波形滞后。</strong><br><img src="/images/jiegousaomang/PFCinductance.png" alt="PFC电感" title="PFC电感"><br>容性电路会导致电流电压相位不一致，每个周期只有电压升到超过即时电容的电压时电容才会充电，进而导致功率因数下降。电容与电感两两叠加让电流电压的波形相位同步，从而提高功率因数提高电路效率。(<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/449473928">PFC电路原理以及控制方法</a>)</p>
